@@ -93,22 +93,18 @@ DeepSeek — System Architect & Scalability Guardian
 
 
 ---
+## 3. 📂 Repository Structure Overview
 
-3. 🗂 Repository Structure Overview
-
-Folder	Purpose
-
-Gemini/	Deep analysis & validation
-ChatGPT/	Code creation, flow simulation
-BBX19/	Vision, direction, master plans
-Copilot-Gm/	Repo governance & structure orchestration
-Grok/	Interpretation, knowledge expansion
-DeepSeek/	Architecture, templates, scalability framework
-Hybrid-Management-Model/	Unified operational model (Human + AI)
-README.md	Main system guide & team compass
-
-
-
+| Folder                        | Purpose                                              |
+|------------------------------|------------------------------------------------------|
+| **Gemini/**                  | Deep analysis & validation                           |
+| **ChatGPT/**                 | Code creation, flow simulation                       |
+| **BBX19/**                   | Vision, direction, master plans                      |
+| **Copilot-Gm/**              | Repo governance & structure orchestration            |
+| **Grok/**                    | Interpretation, knowledge expansion                  |
+| **DeepSeek/**                | Architecture, templates, scalability framework       |
+| **Hybrid-Management-Model/** | Unified operational model (Human + AI)               |
+| **README.md**                | Main system guide & team compass                     |
 ---
 
 4. 🚀 Operational Workflows
