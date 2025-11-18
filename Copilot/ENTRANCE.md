@@ -93,5 +93,60 @@ Copilot-Gm เชื่อมต่อกับ:
 - Template examples → `/Copilot-Gm/templates/`
 
 ---
+---
 
+## ✅ Expected Outputs (ผลลัพธ์ที่คาดหวัง)
+Deliverables ที่ Copilot-Gm ต้องสร้างเพื่อวางรากฐาน governance ให้ระบบ W3:
+
+- `templates/readme-template.md` — Template README สำหรับทุกโมดูล
+- `templates/flow-template.md` — Template สำหรับ flow/diagram
+- `governance/branch-policy.md` — กฎ branch naming & protection rules
+- `governance/commit-guidelines.md` — มาตรฐาน commit message + emoji convention
+- `workspace/onboarding/checklist.md` — Onboarding checklist สำหรับ contributor ใหม่
+- `tasks.md` — Backlog งานเริ่มต้น (onboarding, template gaps, CI basic)
+- `artifacts/` — ตัวอย่างไฟล์ที่ validated แล้ว (annotate: `status: ready`)
+
+**Success Criteria:**  
+เมื่อไฟล์ทั้งหมดผ่าน validation จาก **Gemini** และ sign-off จาก **BBX19** → โมดูลถือว่า “พร้อมเชื่อมระบบ”.
+
+---
+
+## 🗺 Directory Map (โครงสร้างโฟลเดอร์อย่างย่อ)
+
+Copilot-Gm/  
+ ├─ ENTRANCE.md  
+ ├─ README.md  
+ ├─ templates/  
+ ├─ governance/  
+ ├─ workspace/  
+ ├─ tasks.md  
+ └─ artifacts/
+
+> ใช้เป็น "แผนที่การทำงาน" สำหรับการประสานงานระหว่างโมดูล
+
+---
+
+## ⚠️ Risk Notes (ข้อควรระวังเชิงนโยบาย)
+
+- 🚫 **ห้าม Merge โดยไม่ผ่าน PR และ reviewer:**  
+  Reviewer = `BBX19` (final sign-off) + `Gemini` (validation)
+
+- 🔒 **/workspace/**  
+  → เขียนได้เฉพาะ core-maintainers ระหว่างทดสอบ  
+  → ไฟล์ต้อง annotate สถานะ: `status: testing`
+
+- 🔄 **การแก้ governance (branch rules, commit rules)**  
+  → ต้องเปิด PR แยก  
+  → และ update `CHANGELOG.md` พร้อมเหตุผลสั้น ๆ
+
+- 🧭 **การแก้ไขที่กระทบหลายโมดูล**  
+  → ต้องเปิด issue with tag: `#cross-module` ก่อนทำ
+
+- ⚠️ **ห้าม force-push หรือ rewrite history**  
+  → ยกเว้นกรณีแจ้งล่วงหน้าใน `#repo-admin` + ทำ snapshot backup
+
+- 📌 **ไฟล์ที่พร้อมใช้งานจริง**  
+  → ต้อง annotate: `status: ready` (หลัง Gemini validate)
+
+---
 **— End of Module Entrance — Copilot-Gm**
