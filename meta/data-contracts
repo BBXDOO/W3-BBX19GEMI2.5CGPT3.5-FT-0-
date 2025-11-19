@@ -1,1 +1,37 @@
+# W3 System Data Contract (v0.1)
 
+## 1. Core Entities
+- module
+- task
+- signal
+- sync-state
+- decision
+- boundary
+- risk-flag
+
+## 2. Mandatory Fields (Global Standard)
+- id: string
+- type: enum
+- version: string
+- owner: module-id
+- created_at: timestamp
+- updated_at: timestamp
+- payload: object
+
+## 3. Module → Contract Mapping
+- BBX19 → directive, boundary, policy
+- ChatGPT → flow, prototype, test-case
+- DeepSeek → pattern/meta-structure
+- Gemini → validation-output, risk-scan
+- Grok → narrative, anomaly-signal
+- Copilot-Gm → orchestration-log, repo-state
+
+## 4. Payload Validation Rules
+- payload MUST match module spec
+- field missing → raise `error:payload.missing`
+- schema drift → raise `error:schema.version_mismatch`
+
+## 5. Sync Rules
+- all modules MUST reference latest version
+- sync-state = true → when all modules acknowledge same version
+- conflict → create `[sync-conflict]` issue
