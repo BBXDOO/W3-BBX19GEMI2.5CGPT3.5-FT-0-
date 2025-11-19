@@ -1,37 +1,94 @@
-# W3 System Data Contract (v0.1)
+# W3 Module Interaction Contracts (v0.1)
 
-## 1. Core Entities
-- module
-- task
-- signal
-- sync-state
-- decision
-- boundary
-- risk-flag
+## 1. Module Communication Interfaces
 
-## 2. Mandatory Fields (Global Standard)
-- id: string
-- type: enum
-- version: string
-- owner: module-id
-- created_at: timestamp
-- updated_at: timestamp
-- payload: object
+### BBX19 → All Modules
+```json
+{
+  "directive": {"type": "string", "required": true},
+  "priority": {"type": "enum": ["low", "medium", "high", "critical"]},
+  "deadline": {"type": "timestamp"}
+}Gemini → System Validation
 
-## 3. Module → Contract Mapping
-- BBX19 → directive, boundary, policy
-- ChatGPT → flow, prototype, test-case
-- DeepSeek → pattern/meta-structure
-- Gemini → validation-output, risk-scan
-- Grok → narrative, anomaly-signal
-- Copilot-Gm → orchestration-log, repo-state
+```json
+{
+  "validation_request": {"type": "object", "required": true},
+  "risk_level": {"type": "string"},
+  "recommendation": {"type": "string"}
+}
+```
 
-## 4. Payload Validation Rules
-- payload MUST match module spec
-- field missing → raise `error:payload.missing`
-- schema drift → raise `error:schema.version_mismatch`
+DeepSeek → Pattern Analysis
 
-## 5. Sync Rules
-- all modules MUST reference latest version
-- sync-state = true → when all modules acknowledge same version
-- conflict → create `[sync-conflict]` issue
+```json
+{
+  "pattern_data": {"type": "object", "required": true},
+  "analysis_type": {"type": "enum": ["structure", "behavior", "anomaly"]},
+  "confidence_score": {"type": "float"}
+}
+```
+
+ChatGPT → Flow Generation
+
+```json
+{
+  "flow_spec": {"type": "object", "required": true},
+  "complexity": {"type": "enum": ["simple", "moderate", "complex"]},
+  "test_cases": {"type": "array"}
+}
+```
+
+Grok → Narrative Output
+
+```json
+{
+  "narrative_input": {"type": "object", "required": true},
+  "interpretation_level": {"type": "enum": ["summary", "detailed", "technical"]},
+  "anomaly_flags": {"type": "array"}
+}
+```
+
+Copilot-Gm → Orchestration
+
+```json
+{
+  "orchestration_command": {"type": "string", "required": true},
+  "target_modules": {"type": "array", "required": true},
+  "execution_context": {"type": "object"}
+}
+```
+
+2. Cross-Module Message Standards
+
+Request-Response Pattern
+
+```json
+{
+  "message_id": {"type": "uuid", "required": true},
+  "source_module": {"type": "string", "required": true},
+  "target_module": {"type": "string", "required": true},
+  "timestamp": {"type": "timestamp", "required": true},
+  "payload": {"type": "object", "required": true}
+}
+```
+
+3. Error Handling Contracts
+
+Validation Errors
+
+```json
+{
+  "error_code": {"type": "string", "required": true},
+  "error_message": {"type": "string", "required": true},
+  "suggested_fix": {"type": "string"},
+  "retry_possible": {"type": "boolean"}
+}
+```
+
+4. Sync & Version Contracts
+
+Module Sync Agreement
+
+· All modules MUST use same contract version
+· Version mismatch MUST trigger immediate sync
+· Breaking changes REQUIRE 24-hour notification
