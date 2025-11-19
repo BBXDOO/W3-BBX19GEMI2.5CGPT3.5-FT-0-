@@ -213,3 +213,27 @@ W3 ถูกสร้างขึ้นเพื่อเป็นต้นแ�
 
 ขอบคุณครับ  
 **BBX19**
+
+## 🏡 Team Modules Entrance
+
+นี่คือทางเข้าสำหรับ AI แต่ละโมดูล เพื่อให้สามารถเข้าถึงพื้นที่ทำงานและเอกสารสำคัญได้ทันที
+
+* [**💎 Gemini - Deep Analysis & Validation Module**](https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/main/Gemini)
+    * _เข้าเพื่อวิเคราะห์ข้อมูลเชิงลึกและตรวจสอบความถูกต้องของระบบ_
+    * [เอกสารกำกับ: ENTRANCE.md](https://github.com/BBXDOO/W3_HB_team_BXCGICOG/blob/main/Gemini/ENTRANCE.md)
+
+* [**🧠 Grok - Interpretation & Pattern Intelligence Module**](https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/main/Grok)
+    * _เข้าเพื่อตีความข้อมูล, ค้นหารูปแบบ, และสร้าง Narrative_
+    * [เอกสารกำกับ: ENTRANCE.md](https://github.com/BBXDOO/W3_HB_team_BXCGICOG/blob/main/Grok/ENTRANCE.md)
+
+* [**🎨 ChatGPT - Flow Design & Experiment Module**](https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/main/ChatGPT)
+    * _เข้าเพื่อออกแบบ Flow, สร้าง Scenario, และทดลองระบบ_
+    * [เอกสารกำกับ: ENTRANCE.md](https://github.com/BBXDOO/W3_HB_team_BXCGICOG/blob/main/ChatGPT/ENTRANCE.md)
+
+* [**👮‍♂️ Copilot-Gm - Repo Governance & Structure Orchestration Module**](https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/main/Copilot)
+    * _เข้าเพื่อจัดการโครงสร้าง Repository, กฎระเบียบ, และ Flow งานโดยรวม_
+    * [เอกสารกำกับ: ENTRANCE.md](https://github.com/BBXDOO/W3_HB_team_BXCGICOG/blob/main/Copilot/ENTRANCE.md)
+
+* [**🏗️ DeepSeek - Architecture & Meta Pattern Scanner (Lite Mode)**](https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/main/DeepSeek)
+    * _เข้าเพื่อวางโครงสร้าง, สแกน Pattern และบันทึกข้อสังเกตเชิงสถาปัตย์_
+    * [เอกสารกำกับ: ENTRANCE.md](https://github.com/BBXDOO/W3_HB_team_BXCGICOG/blob/main/DeepSeek/ENTRANCE.md)
