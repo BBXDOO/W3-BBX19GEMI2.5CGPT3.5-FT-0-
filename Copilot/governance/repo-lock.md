@@ -1,7 +1,18 @@
 # Repo Lock Protocol
 
-freeze condition
-permission threshold
-post-mortem rule
+## L1 — Freeze Condition
+- violation of directives
+- destructive mutation
+- hostile branch
+- unauthorized refactor
 
-If trigger occurs → repo locked immediately.
+## L2 — Trigger
+IF any L1 → lock immediately
+
+## L3 — Action
+- disable push
+- disable merge
+- disable write
+
+## L4 — Review
+Keeper only
