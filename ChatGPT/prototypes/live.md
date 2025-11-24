@@ -51,3 +51,5 @@ Every prototype must include:
 P1 — Speed assigned to ChatGPT module
 P2 — Instability risk absorbed by ChatGPT module
 P3 — Team resources protected at all times
+---
+No escalation → No merge.
