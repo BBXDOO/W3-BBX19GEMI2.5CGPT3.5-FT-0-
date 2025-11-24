@@ -1,10 +1,6 @@
 # DeepSeek Meta Structure
 
-- nodes → connect to nodes
-- long-range flow
-- volatile junction points
-- DeepSeek fills missing structure
-
-Commit message
-
-docs(DeepSeek): add meta structure map
+M1 — Nodes connect nodes.
+M2 — Fills unknown structure.
+M3 — Handles long-range flow.
+M4 — Stabilizes volatility.
