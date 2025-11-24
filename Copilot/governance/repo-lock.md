@@ -1,10 +1,7 @@
-ต้องมี:
+# Repo Lock Protocol
 
 freeze condition
-
 permission threshold
-
 post-mortem rule
 
-
-เวลาทุกอย่างพัง → ตัวนี้ต้องล็อก
+If trigger occurs → repo locked immediately.
