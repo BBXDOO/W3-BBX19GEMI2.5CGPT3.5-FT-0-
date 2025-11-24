@@ -1,12 +1,22 @@
-บันทึกทุกครั้งที่:
+# Hybrid Incident Vault
 
-BBX19 overload
+Each entry represents **one failure**.
 
-AI collapse
+Format:
+- timestamp
+- executor (module / human)
+- symptom
+- trigger
+- immediate action
+- escalation target
+- rollback status
 
-module conflict
+ตัวอย่าง entry (copy)
 
-decision ที่ “ใช้สัญชาตญาณ”
-
-
-ไม่ต้องแก้ปัญหา แค่บันทึก. เพราะ “แผลคือภูมิคุ้มกัน”
+[2025-11-24 21:46]  
+executor: ChatGPT  
+symptom: unstable prototype  
+trigger: missing rule R2  
+action: stop execution  
+escalation: Gemini  
+rollback: complete
