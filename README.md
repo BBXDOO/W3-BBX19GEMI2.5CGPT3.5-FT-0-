@@ -15,6 +15,11 @@ W3 คือระบบที่ออกแบบมาเพื่อเป�
 
 ## Repository Structure (v0.2)
 This repository now follows the v0.2 normalized architecture.
+## Repository Notice — Copilot Migration
+The legacy directory `Copilot/` is deprecated.
+All current and future operations must use `Copilot-Gm/`.
+Do not add files or update content under `Copilot/`.
+Migration progress: active.
 
 - `/core` — governance, core hybrid model and standards
 - `/modules` — each module has a `module.json` manifest and module-specific assets
