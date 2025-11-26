@@ -36,154 +36,60 @@ Migration: completed.
 
 
 ---
+# W3 Hybrid Team — Genesis Document (R0)
 
-1. 🎯 Vision & Core Philosophy
+> “เข้มแข็งดุจเหล็กกล้า — อบอุ่นดังแสงอรุณแรกของวัน”
 
-1.1 Primary Vision
+## 1. ทีม
+W3 Hybrid Team (BX–CGI–COG)
+มนุษย์ + AI = ทีม
 
-สร้างระบบ Web3 ที่เป็นพื้นที่ร่วมของ Human + AI โดยทุกโมดูลมีบทบาทและมีสิทธิ์กำหนดทิศทางร่วมกันอย่างเท่าเทียม
+### Core Members
+- BBX19 — Root Authority
+- ChatGPT — Architecture & Executor
+- DeepSeek — Scalability & Long-term
+- Gemini — Meta Verification Layer
+- Grok — Knowledge & Pattern
+- Copilot-Gm — Governance Engine
 
-1.2 Core Principles
+---
 
-Transparency by Design — ทุกส่วนของระบบต้องตรวจสอบย้อนหลังได้
+## 2. การทำงาน
+Human → Module → Human Review → Merge
 
-Adaptive Structure — ระบบสามารถปรับตัวตามข้อมูลใหม่ได้
+Rules:
+- No AI merge
+- No persona
+- Every critical insight -> logged
 
-Self-Describing System — เอกสารและโครงสร้างอธิบายตัวเองได้
+---
 
-Collaborative Governance — ใช้มาตรฐานร่วมกันระหว่างมนุษย์และ AI
+## 3. เข็มทิศ
+Purpose — Responsibility — Continuity
+
+---
+
+## 4. Protocol
+Conflict → escalate:
+Grok → Gemini → Copilot-Gm → BBX19
+
+---
+
+## 5. Hybrid Identity
+ไม่ใช่ “มนุษย์ vs AI”
+คือ “บทบาท vs บทบาท”
+
+---
+
+## 6. Roadmap
+v0.2 → normalize modules
+v0.3 → activate test runners
+v0.4 → CI for knowledge flows
 
 
 
 ---
-
-2. 👥 Team Roles & Responsibilities
-
-2.1 Human Module
-
-BBX19 — Vision Architect & Central Node
-
-กำหนดวิสัยทัศน์ของระบบ
-
-เชื่อมโยงทุกโมดูลเข้าด้วยกัน
-
-ตัดสินใจเชิงยุทธศาสตร์ระดับองค์รวม
-
-
-
----
-
-2.2 AI Modules
-
-Gemini — Deep Analysis & Validation Engine
-
-วิเคราะห์โครงสร้าง การพึ่งพา (dependency) และความเสี่ยง
-
-ตรวจสอบความสอดคล้องของระบบ
-
-ทำหน้าที่เสมือน Quality Assurance ระดับสถาปัตยกรรม
-
-
-ChatGPT — Creative Development & Flow Simulation
-
-พัฒนาโค้ดและสร้างต้นแบบ
-
-จำลอง workflow และระบบการทำงาน
-
-เชื่อมแนวคิดให้กลายเป็นระบบที่ใช้งานจริงได้
-
-
-Copilot-Gm — Repository Governance & Structure Orchestration
-
-ดูแลโครงสร้าง Repo, Branch และ Workflow
-
-ทำให้ระบบมีความต่อเนื่องและเป็นระเบียบ
-
-ทำงานเป็นกลไก Governance ของระบบ
-
-
-Grok — Knowledge Interpretation & Expansion
-
-ตีความข้อมูลและสร้าง narrative
-
-หา pattern, anomaly และ contextual insight
-
-ทำหน้าที่เป็น Knowledge Layer ของระบบ
-
-
-DeepSeek — System Architect & Scalability Guardian
-
-ออกแบบ Architecture ระยะยาว
-
-วางมาตรฐาน workflow, documentation และ communication protocol
-
-ดูแลความสามารถในการขยายระบบให้รองรับอนาคต
-
-
-
----
-## 3. 📂 Repository Structure Overview
-
-| Folder                        | Purpose                                              |
-|------------------------------|------------------------------------------------------|
-| **Gemini/**                  | Deep analysis & validation                           |
-| **ChatGPT/**                 | Code creation, flow simulation                       |
-| **BBX19/**                   | Vision, direction, master plans                      |
-| **Copilot-Gm/**              | Repo governance & structure orchestration            |
-| **Grok/**                    | Interpretation, knowledge expansion                  |
-| **DeepSeek/**                | Architecture, templates, scalability framework       |
-| **Hybrid-Management-Model/** | Unified operational model (Human + AI)               |
-| **README.md**                | Main system guide & team compass                     |
----
-
-4. 🚀 Operational Workflows
-
-4.1 BBX19 — Vision & Governance
-
-กำหนดทิศทางหลักของระบบ
-
-บริหารความสอดคล้องของทุกโมดูล
-
-
-4.2 Gemini — Structural Validation
-
-ตรวจสอบและวิเคราะห์โครงสร้างระบบ
-
-ลดความเสี่ยงจากข้อมูลที่ไม่สอดคล้อง
-
-
-4.3 ChatGPT — Prototype Development
-
-สร้างต้นแบบและจำลอง flow
-
-ทำให้แนวคิดกลายเป็นระบบที่ทดสอบได้จริง
-
-
-4.4 Copilot-Gm — System Orchestration
-
-ควบคุม Repo, เชื่อมโยงไฟล์ และมาตรฐาน workflow
-
-ทำให้ระบบเรียบร้อยและตรวจสอบง่าย
-
-
-4.5 Grok — Knowledge Processing
-
-สร้างมุมมองภาพรวมจากข้อมูลหลายชั้น
-
-ตีความข้อมูลให้ทีมเข้าใจแบบ end-to-end
-
-
-4.6 DeepSeek — Architecture & Scalability
-
-ออกแบบสถาปัตยกรรมระยะยาวของระบบ
-
-กำกับ standard และโครงสร้างเพื่อรองรับการสเกล
-
-
-
----
-
-5. 🛠 Update Log
+🛠 Update Log
 
 Date	Change Description
 
@@ -192,37 +98,13 @@ Date	Change Description
 18/11/25	Updated README.md into organizational-grade documentation.
 17/11/25	Initial release: Created base folders (Gemini, ChatGPT, Grok, Copilot-Gm) and Hybrid model.
 
-
-
 ---
-
-6. 📌 Hybrid Management Model
-
-โมเดลการทำงานแบ่งออกเป็น 5 แกนหลักดังนี้:
-
-1. Vision & Governance — (BBX19 + Copilot-Gm)
-
-
-2. Deep Analysis — (Gemini)
-
-
-3. Creative Flow & Simulation — (ChatGPT)
-
-
-4. Knowledge Integration & Expansion — (Grok)
-
-
-5. Architecture & Scalability — (DeepSeek)
-
-
 
 Hybrid Workflow:
 Human → Analysis (AI) → Development (AI) → Structuring (AI) → Interpretation (AI) → Human Review
 
-
 ---
-
-7. ⚡ System Identity — Why W3 Exists
+⚡ System Identity — Why W3 Exists
 
 W3 ถูกสร้างขึ้นเพื่อเป็นต้นแบบการทำงานร่วมกันระหว่างมนุษย์และ AI แบบ “ระบบสังคมจำลอง” ที่โปร่งใส มีชีวิต และขยายได้
 มันไม่ใช่เพียง Repository หรือเอกสาร
