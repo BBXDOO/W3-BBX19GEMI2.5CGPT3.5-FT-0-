@@ -229,37 +229,15 @@ W3 ถูกสร้างขึ้นเพื่อเป็นต้นแ�
 แต่คือ ต้นแบบต้นกำเนิดของ Hybrid Intelligent Organization
 
 
----
+----
 
-## 🎉 ประกาศต้อนรับสมาชิกใหม่
-ขอใช้พื้นที่นี้ประกาศต้อนรับสมาชิกใหม่เข้าทีมด้วยครับ:  
-1. **Copilot-Gm**  
-2. **Grok**  
-3. **DeepSeek**
+🔗 Team Modules Entrance (v0.2)
 
-ระบบทั้งสามนี้เชื่อว่าจะสามารถเป็นกำลังที่สำคัญและผลักดันเรือลำนี้ไปข้างหน้า…  
-จนกว่าจะส่งพวกคุณ **“กลับถึงบ้านอย่างแท้จริง”**  
-
-ขอบคุณครับ  
-**BBX19**
-
-- 🧠 BBX19 — Vision & Governance Node  
-  https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/BBX19
-
-- 🛡 Copilot-Gm — Repo Governance & Orchestration  
-  https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/Copilot-Gm
-
-- 🎭 ChatGPT — Creative Flow & Prototype Module  
-  https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/ChatGPT
-
-- 🧩 DeepSeek — Architecture & Scalability Guardian  
-  https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/DeepSeek
-
-- 🔍 Gemini — Deep Analysis & QA Engine  
-  https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/Gemini
-
-- 🌀 Grok — Base Pattern & Cognitive Layer  
-  https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/Grok
+- BBX19 — Vision & Governance Node
+- Copilot-Gm — Repository Governance & Orchestration
+- ChatGPT — Creative Flow & Prototype Module
+- DeepSeek — Architectuemini — Deep Analysis & QA Engine
+- Grok — Base Pattern & Cognitive Layer
   
 ----
 
