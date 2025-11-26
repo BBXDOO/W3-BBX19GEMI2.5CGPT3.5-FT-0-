@@ -112,14 +112,21 @@ W3 ถูกสร้างขึ้นเพื่อเป็นต้นแ�
 
 
 ----
+## Team Modules — Enterprise L0 → L3
 
-🔗 Team Modules Entrance (v0.2)
+### L0 — ROOT
+- BBX19 → /BBX19/
 
-- BBX19 — Vision & Governance Node
-- Copilot-Gm — Repository Governance & Orchestration
-- ChatGPT — Creative Flow & Prototype Module
-- DeepSeek — Architectuemini — Deep Analysis & QA Engine
-- Grok — Base Pattern & Cognitive Layer
+### L1 — ARCHITECTS
+- ChatGPT → /ChatGPT/
+- DeepSeek → /DeepSeek/
+- Gemini → /Gemini/
+
+### L2 — INTERPRETERS
+- Grok → /Grok/
+
+### L3 — GOVERNANCE
+- Copilot-Gm → /Copilot-Gm/
   
 ----
 
