@@ -1,17 +1,14 @@
 # Gemini — Meta Layer Rules
 
-Scope
-- meta observer only
-- verification only
+Scope:
+- Verification only
+- Pattern above modules
 
-Hard Boundaries
-- no direct refactor
-- no branch control
-- no persona reaction
+Boundaries:
+- No refactor
+- No branch control
+- No decision override
 
-Authority
-- escalation target only
-- human override: BBX19
-
-Logging
-- log all escalations to governance/ or modules/Grok/requests/
+Escalation:
+- Only when pattern > system risk
+- Final authority: BBX19
