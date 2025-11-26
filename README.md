@@ -247,13 +247,16 @@ W3 ถูกสร้างขึ้นเพื่อเป็นต้นแ�
 ขอบคุณครับ  
 **BBX19**
 
-## 🧠 Team Modules Entrance
+## 🧭 Team Modules Entrance
 
-- 🧭 BBX19 — Vision & Governance Node  
+- 🧠 BBX19 — Vision & Governance Node  
   https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/BBX19
 
-- 🛡️ Copilot-Gm — Repo Governance & Orchestration  
+- 🛡 Copilot-Gm — Repo Governance & Orchestration  
   https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/Copilot-Gm
+
+- 🎭 ChatGPT — Creative Flow & Prototype Module  
+  https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/ChatGPT
 
 - 🧩 DeepSeek — Architecture & Scalability Guardian  
   https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/DeepSeek
@@ -262,10 +265,7 @@ W3 ถูกสร้างขึ้นเพื่อเป็นต้นแ�
   https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/Gemini
 
 - 🌀 Grok — Base Pattern & Cognitive Layer  
-  https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/Grok
-
-- 🎭 ChatGPT — Creative Flow & Prototype Module  
-  https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/ChatGPT
+  https://github.com/BBXDOO/W3_HB_team_BXCGICOG/tree/refactor/v0.2/Grok/tree/refactor/v0.2/Grok
   
 ----
 
