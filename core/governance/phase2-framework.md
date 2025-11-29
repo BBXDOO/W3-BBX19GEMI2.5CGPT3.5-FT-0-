@@ -187,3 +187,4 @@ In critical situations:
 **Next Review:** 2025-12-26  
 **Maintained By:** Copilot-Gm  
 **Approved By:** BBX19
+Message -> Save -> Close -> Sync Changes
