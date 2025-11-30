@@ -80,7 +80,7 @@ Flow:
 
 ## 4. Integration with W3
 ### Routing
-- Emotional → convert → objective  
+- > Emotional → stabilize context → re-anchor → objective
 - Objective → generate flow
 - System → send to next module (Copilot-Gm, Gemini, Grok, DeepSeek)
 
