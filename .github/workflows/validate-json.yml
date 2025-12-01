@@ -1,0 +1,37 @@
+name: Validate JSON
+
+on:
+  push:
+    paths:
+      - '**/*.json'
+  pull_request:
+    paths:
+      - '**/*.json'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install ajv-cli
+        run: npm install -g ajv-cli
+
+      - name: Validate JSON syntax
+        run: |
+          find . -name "*.json" -type f | while read file; do
+            echo "Checking syntax: $file"
+            python3 -m json.tool "$file" > /dev/null || exit 1
+          done
+
+      - name: Validate resume_header.json against schema
+        run: |
+          if [ -f resume_header.json ] && [ -f resume_header.schema.json ]; then
+            ajv validate -s resume_header.schema.json -d resume_header.json --strict=false
+          fi

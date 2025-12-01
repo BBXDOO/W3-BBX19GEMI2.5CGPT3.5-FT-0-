@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["keyword", "task_id", "timestamp"],
+  "properties": {
+    "keyword": { "type": "string" },
+    "task_id": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "state": { "type": "string" },
+    "next_action": { "type": "string" },
+    "contact": { "type": "string" },
+    "repo": { "type": "string" }
+  }
+}
