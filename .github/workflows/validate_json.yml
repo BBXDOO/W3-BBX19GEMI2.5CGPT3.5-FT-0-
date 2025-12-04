@@ -40,4 +40,4 @@ jobs:
           echo "✅ Treasury Config JSON: Syntax OK"
         
       - name: ✅ Report Success
-        run: echo "Veritas: Critical JSON files passed validation. Data Integrity is maintained."
+       run: echo "Veritas: Critical JSON files passed validation. Data Integrity is maintained."
