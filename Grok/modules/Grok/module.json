@@ -8,7 +8,7 @@
   "stage": "alpha",
   "reviewer": "BBX19",
   "deprecation": "none"
-  }
+  },
   "inputs": [
     "repo://*",
     "prompt://BBX19",
