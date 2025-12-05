@@ -1,3 +1,16 @@
+name: Validate JSON
+
+on:
+  push: {}
+  pull_request: {}
+
+jobs:
+  validate:
+    name: Validate JSON files
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
 name: W3 JSON Validator (Veritas)
 
 on:
