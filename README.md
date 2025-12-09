@@ -8,6 +8,13 @@ Last Updated: 26/11/25
 
 ## ​📢 ANNOUNCEMENT:
 
+### 🛠️ File Integrity Check Tools Available
+Automated tools for checking repository file integrity are now available:
+- **Quick Start:** See [QUICK_START.md](QUICK_START.md)
+- **User Guide:** See [USER_SUMMARY.md](USER_SUMMARY.md)
+- **Full Report:** See [INTEGRITY_REPORT_TH.md](INTEGRITY_REPORT_TH.md)
+- **Tools:** Located in `/tools/` directory
+
 
 ## Repository Structure (v0.2)
 This repository now follows the v0.2 normalized architecture.
