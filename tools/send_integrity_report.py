@@ -43,7 +43,13 @@ class EmailReporter:
     def create_html_report(self, checker):
         """Create an HTML formatted email report"""
         issues = checker.get_issues_dict()
-        total_issues = sum(len(v) for v in issues.values())
+        
+        # Deduplicate all issues once
+        deduped_issues = {
+            key: sorted(set(values)) for key, values in issues.items()
+        }
+        
+        total_issues = sum(len(v) for v in deduped_issues.values())
         
         html = f"""
         <html>
@@ -85,64 +91,64 @@ class EmailReporter:
             </div>
             """
             
-            if issues["missing_directories"]:
+            if deduped_issues["missing_directories"]:
                 html += """
                 <div class="section">
                     <div class="section-title">📁 Missing Directories</div>
                     <ul class="issue-list">
                 """
-                for item in sorted(set(issues["missing_directories"])):
+                for item in deduped_issues["missing_directories"]:
                     html += f"<li>{item}</li>"
                 html += "</ul></div>"
             
-            if issues["missing_files"]:
+            if deduped_issues["missing_files"]:
                 html += """
                 <div class="section">
                     <div class="section-title">📄 Missing Files</div>
                     <ul class="issue-list">
                 """
-                for item in sorted(set(issues["missing_files"])):
+                for item in deduped_issues["missing_files"]:
                     html += f"<li>{item}</li>"
                 html += "</ul></div>"
             
-            if issues["corrupted_json"]:
+            if deduped_issues["corrupted_json"]:
                 html += """
                 <div class="section">
                     <div class="section-title">⚠️ Corrupted JSON Files</div>
                     <ul class="issue-list">
                 """
-                for item in sorted(set(issues["corrupted_json"])):
+                for item in deduped_issues["corrupted_json"]:
                     html += f"<li>{item}</li>"
                 html += "</ul></div>"
             
-            if issues["empty_files_suspicious"]:
+            if deduped_issues["empty_files_suspicious"]:
                 html += """
                 <div class="section">
                     <div class="section-title">🔍 Suspicious Empty Files</div>
                     <ul class="issue-list">
                 """
-                for item in sorted(set(issues["empty_files_suspicious"])):
+                for item in deduped_issues["empty_files_suspicious"]:
                     html += f"<li>{item}</li>"
                 html += "</ul></div>"
             
-            if issues["broken_symlinks"]:
+            if deduped_issues["broken_symlinks"]:
                 html += """
                 <div class="section">
                     <div class="section-title">🔗 Broken Symbolic Links</div>
                     <ul class="issue-list">
                 """
-                for item in sorted(set(issues["broken_symlinks"])):
+                for item in deduped_issues["broken_symlinks"]:
                     html += f"<li>{item}</li>"
                 html += "</ul></div>"
         
         html += f"""
             <div class="summary">
                 <h2>Summary</h2>
-                <div class="summary-item"><strong>Missing Directories:</strong> {len(set(issues['missing_directories']))}</div>
-                <div class="summary-item"><strong>Missing Files:</strong> {len(set(issues['missing_files']))}</div>
-                <div class="summary-item"><strong>Corrupted JSON Files:</strong> {len(set(issues['corrupted_json']))}</div>
-                <div class="summary-item"><strong>Suspicious Empty Files:</strong> {len(set(issues['empty_files_suspicious']))}</div>
-                <div class="summary-item"><strong>Broken Symbolic Links:</strong> {len(set(issues['broken_symlinks']))}</div>
+                <div class="summary-item"><strong>Missing Directories:</strong> {len(deduped_issues['missing_directories'])}</div>
+                <div class="summary-item"><strong>Missing Files:</strong> {len(deduped_issues['missing_files'])}</div>
+                <div class="summary-item"><strong>Corrupted JSON Files:</strong> {len(deduped_issues['corrupted_json'])}</div>
+                <div class="summary-item"><strong>Suspicious Empty Files:</strong> {len(deduped_issues['empty_files_suspicious'])}</div>
+                <div class="summary-item"><strong>Broken Symbolic Links:</strong> {len(deduped_issues['broken_symlinks'])}</div>
                 <div class="summary-item"><strong>TOTAL ISSUES:</strong> {total_issues}</div>
             </div>
         </body>
@@ -182,7 +188,13 @@ class EmailReporter:
                 server = smtplib.SMTP_SSL(self.config["smtp_server"], self.config["smtp_port"])
             
             if self.config["sender_password"]:
-                server.login(self.config["sender_email"], self.config["sender_password"])
+                try:
+                    server.login(self.config["sender_email"], self.config["sender_password"])
+                except smtplib.SMTPAuthenticationError as auth_err:
+                    print(f"❌ Authentication failed: {str(auth_err)}")
+                    print("Please check your email and password (use App Password for Gmail)")
+                    server.quit()
+                    return False
             
             server.sendmail(
                 self.config["sender_email"],

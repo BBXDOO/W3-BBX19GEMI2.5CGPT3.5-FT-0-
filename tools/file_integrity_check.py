@@ -23,14 +23,12 @@ class FileIntegrityChecker:
         
     def check_module_dependencies(self):
         """Check if directories and files referenced in module.json exist"""
-        module_files = [
-            "Copilot-Gm/module.json",
-            "ChatGPT/modules/ChatGPT/module.json",
-            "Gemini/modules/Gemini/module.json",
-            "Grok/modules/Grok/module.json",
-            "DeepSeek/modules/DeepSeek/module.json",
-            "BBX19/modules/BBX19/module.json"
-        ]
+        # Dynamically discover all module.json files
+        module_files = []
+        for json_file in self.repo_root.rglob("module.json"):
+            if '.git' not in json_file.parts:
+                rel_path = json_file.relative_to(self.repo_root)
+                module_files.append(str(rel_path))
         
         for module_file in module_files:
             module_path = self.repo_root / module_file
