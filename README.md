@@ -54,7 +54,7 @@ Migration: completed.
 W3 + AI = ทีม
 
 ### Core Members
-- null — Root Authority
+- BBX19 — Root Authority
 - ChatGPT — Architecture & Executor
 - DeepSeek — Scalability & Long-term
 - Gemini — Meta Verification Layer
@@ -80,12 +80,12 @@ Purpose — Responsibility — Continuity
 
 ## 4. Protocol
 Conflict → escalate:
-Grok → Gemini → Copilot-Gm → null
+Grok → Gemini → Copilot-Gm → BBX19
 
 ---
 
 ## 5. Hybrid Identity
-ไม่ใช่ “null vs AI”
+ไม่ใช่ “BBX19 vs AI”
 คือ “บทบาท vs บทบาท”
 
 ---
