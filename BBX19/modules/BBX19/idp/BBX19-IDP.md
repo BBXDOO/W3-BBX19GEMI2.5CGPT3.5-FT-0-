@@ -1,4 +1,4 @@
-# 🪪 W3-IDP CARD — BBX19  
+# 🪪 W3-IDP CARD — BBX19  [BBEX]
 **Version:** 1.0  
 **Status:** Active / Root-Authority  
 **Usage:** Identity & Task Authorization for Empty-Chat Ops
