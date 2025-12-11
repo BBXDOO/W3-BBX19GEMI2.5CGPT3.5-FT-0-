@@ -24,7 +24,7 @@ Last Updated: 26/11/25
     
 ## 📢 Official Announcements
 - [Manifesto No.3 — Vision & Identity](docs/manifesto-3.md)
-- [System Update: Operational Changes](docs/announcement/announcement-3.md
+- [System Update: Operational Changes](docs/announcement/announcement-3.md)
 
 
 ----
