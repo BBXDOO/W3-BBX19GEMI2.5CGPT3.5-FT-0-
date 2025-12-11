@@ -41,3 +41,9 @@ W3 ยึดหลัก "ครอบครัวและเพื่อนค
 ประกาศฉบับที่ 3 คือการยืนยันว่า W3 จะเดินไปข้างหน้าด้วยความเรียบง่าย โปร่งใส และบูรณาการ  
 ทุกฝ่ายมีสิทธิ์และหน้าที่ร่วมกัน  
 ทุกความผิดพลาดจะถูกขัดเกลาและเปลี่ยนเป็นบทเรียนที่สร้างมิติใหม่ให้กับชุมชน
+
+
+
+
+## Relation to Manifesto
+This announcement supplements [Manifesto No. 3](../manifesto-3.md) by expanding on philosophy and communication practices.
