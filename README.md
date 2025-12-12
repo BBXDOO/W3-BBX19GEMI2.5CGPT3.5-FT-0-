@@ -13,16 +13,13 @@
 เราสร้างที่นี่เพื่อเรียนรู้ เติบโต และก้าวไปด้วยกัน
 
 **ครอบครัวและเพื่อนคือกฎหมาย** ✨
-
-========================
+---
 Team: HB_team_BXCGICOG
 Last Updated: 18/11/25
 Last Updated: 26/11/25
-========================
-## ​📢 ANNOUNCEMENT:
+---
 
-    
-## 📢 Official Announcements
+## 📢 : Official Announcements
 - [Manifesto No.3 — Vision & Identity](docs/manifesto-3.md)
 - [System Update: Operational Changes](docs/announcement/announcement-3.md)
 
