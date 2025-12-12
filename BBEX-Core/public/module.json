@@ -1,6 +1,8 @@
 {
   "id": "bbex_core",
   "name": "BBEX Core",
+  "version": "0.1.0",
+  "schema_version": "1.0",
   "w3_dna_code": "BBEX-W3.DNA:LEGACY - TMOON/[A00.EX]",
   "status": "active_hybrid",
   "essence": "Beyond Brave; The eXecuting eXception.",
@@ -10,5 +12,14 @@
     "brackets": "พื้นที่ตระหนักรู้ที่ปกป้องการเติบโต"
   },
   "access": "hybrid_bbx19_centric",
+  "maintainers": [
+    {
+      "name": "BBXDOO",
+      "role": "owner",
+      "contact": ""
+    }
+  ],
+  "license": "MIT",
+  "created_at": "2025-12-12T00:00:00Z",
   "note": "A living philosophical map. Hybrid protocol in effect."
 }
