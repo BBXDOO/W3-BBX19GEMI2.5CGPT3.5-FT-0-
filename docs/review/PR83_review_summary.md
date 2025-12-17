@@ -24,11 +24,13 @@ This is a **non-code, governance-only change** designed to prevent incomplete or
 
 ## [SUMMARY]
 
-**Changed:** Added `AGENT_TASKS.md` defining merge review requirements  
+**Changed:** Added `AGENT_TASKS.md` defining merge review requirements (file added in PR #83 branch)  
 **Reason:** Repository lacked standardized merge review protocol, creating ambiguity and risk of incomplete merges  
 **Initiated by:** W3 Hybrid Governance (Copilot-Gm)  
 **Affected modules:** All modules (establishes governance framework)  
 **Expected outcome:** All future PRs must include Summary, Risk Assessment, and Rollback Plan before merge approval
+
+**Note:** `AGENT_TASKS.md` exists in the `copilot/hold-merge-review-summary` branch (PR #83) and will be merged to main upon approval.
 
 ---
 
@@ -128,11 +130,13 @@ Before merge approval, the following must be satisfied:
 
 ## Compliance Verification
 
-This review summary complies with `AGENT_TASKS.md` requirements:
+This review summary complies with `AGENT_TASKS.md` requirements (as defined in PR #83):
 
 - ✅ **Summary:** Complete
 - ✅ **Risk Assessment:** Complete (MEDIUM risk, mitigation defined)
 - ✅ **Rollback Plan:** Complete (simple closure, no impact)
+
+**Reference:** `AGENT_TASKS.md` is the governance document being introduced by PR #83, which this review summary evaluates.
 
 ---
 
