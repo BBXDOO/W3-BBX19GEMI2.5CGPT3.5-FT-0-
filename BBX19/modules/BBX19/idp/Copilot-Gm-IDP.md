@@ -55,4 +55,4 @@ If governance fails: Escalate → Gemini → BBX19
  
 
 📌 ตำแหน่งไฟล์แนะนำ:
- /BBX19/modules/Copilot-Gm/idp/COPILOT_GM_IDP.md 
+ /BBX19/modules/Copilot-Gm/idp/Copilot-Gm-IDP.md 
