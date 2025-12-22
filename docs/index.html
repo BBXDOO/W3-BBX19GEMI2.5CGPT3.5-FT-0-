@@ -525,11 +525,15 @@
       if (!deferredPrompt) {
         return;
       }
-      await deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      console.log(`User response to the install prompt: ${outcome}`);
-      deferredPrompt = null;
-      installPrompt.classList.remove('show');
+      try {
+        await deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response to the install prompt: ${outcome}`);
+        deferredPrompt = null;
+        installPrompt.classList.remove('show');
+      } catch (error) {
+        console.error('Error during PWA installation:', error);
+      }
     });
 
     closePrompt.addEventListener('click', () => {
